@@ -42,6 +42,7 @@
         .content {
             color: #333333;
             font-size: 16px;
+            margin: 30px 0;
 
             .padding {
                 width: 60%;
@@ -59,6 +60,20 @@
                 }
             }
 
+        }
+    }
+
+    footer {
+        font-size: 18px;
+        text-align: center;
+        color: #333333;
+        font-weight: 600;
+        margin: 30px 0;
+
+        .border {
+            width: 60%;
+            margin: 30px auto;
+            border-top: 3px dotted #f4edd4;
         }
     }
 }
