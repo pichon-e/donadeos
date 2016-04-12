@@ -1,34 +1,65 @@
-<div layout="vertical" layout-fill>
+<div id="home">
 
-  <md-content>
-    <header>
-      <acme-navbar creation-date="main.creationDate"></acme-navbar>
-    </header>
+  <div id="header" layout="column" layout-align="end center">
+    <div>
+      <p>Qu’est ce qui lui ferait vraiment plaisir ?</p>
+      <p>Lancez l’enquête …</p>
 
-    <section class="jumbotron">
-      <h1>'Allo, 'Allo!</h1>
-      <p class="lead">
-        <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-        Always a pleasure scaffolding your apps.
-      </p>
-      <md-button class="md-raised animated infinite" ng-class="main.classAnimation" ng-click="main.showToastr()">Splendid Toastr</md-button>
-      <p>
-        With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
-      </p>
-    </section>
-
-    <div class="techs" layout-align="center">
-      <md-card ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-        <md-card-content>
-          <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-          <h3 class="md-title">{{ awesomeThing.title }}</h3>
-          <p>{{ awesomeThing.description }}</p>
-        </md-card-content>
-        <div class="md-action-buttons">
-          <md-button ng-href="{{ awesomeThing.url }}">Website</md-button>
-        </div>
-      </md-card>
     </div>
-  </md-content>
+    <md-button class="md-raised">
+      Trouver son cadeau
+    </md-button>
+  </div>
+  <section>
+    <div class="title">
+      Je crée
+    </div>
+    <div class="content" layout="column" layout-align="center center">
+      <p>
+        Je m’identifie
+      </p>
+
+      <p>
+        Je commence l’enquête</br>
+        (2 minutes top chronos !)
+      </p>
+
+    </div>
+  </section>
+  <section>
+    <div class="title">
+      Je partage
+    </div>
+    <div class="content" layout="column" layout-align="center center">
+      <md-button class="md-raised" layout="row" layout-align="center center">
+        <img src="../assets/images/facebook.png">
+        je partage sur facebook
+      </md-button>
+
+      <p class="padding">
+        Je partage mon enquête en toute simplicité
+        avec mes amis Facebook
+        Je suis son évolution
+      </p>
+
+    </div>
+  </section>
+  <section>
+    <div class="title">
+      Je choisi
+    </div>
+    <div class="content" layout="column" layout-align="center center">
+      <p>
+        Je m’identifie
+      </p>
+
+      <p>
+        Je commence l’enquête</br>
+        (2 minutes top chronos !)
+      </p>
+
+    </div>
+  </section>
+
 
 </div>
